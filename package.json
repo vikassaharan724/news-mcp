@@ -1,0 +1,16 @@
+{
+  "name": "news-mcp",
+  "version": "1.0.0",
+  "description": "Tech news MCP server (Hacker News Algolia API, free)",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "express": "^5.1.0",
+    "zod": "^3.25.76"
+  }
+}
