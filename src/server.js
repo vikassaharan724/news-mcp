@@ -67,6 +67,6 @@ app.delete("/mcp", async (req, res) => {
   await sessions.get(sessionId).handleRequest(req, res);
 });
 
-app.listen(PORT, () => {
-  console.log(`News MCP server http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`News MCP server on 0.0.0.0:${PORT}`);
 });
